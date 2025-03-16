@@ -1,0 +1,54 @@
+.content {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+.banner1 {
+
+    width: 90%;
+    height: 70vh;
+    margin: 10%;
+    border: 1px solid blue;
+
+}
+
+.imgbanner1 {
+
+
+    width: 100%;
+    height: auto;
+}
+
+.slidertecnico {
+
+    width: 90%;
+    height: 50vh;
+    margin: 10%;
+    border: 1px solid orange;
+
+}
+
+.imgslider {
+
+
+    width: 100%;
+    height: auto;
+}
+.sobre{
+
+    width: 90%;
+    height: 40vh;
+    margin: 10%;
+    border: 1px solid yellow
+}
+
+.imgsobre {
+
+
+    width: 100%;
+    height: auto;
+}
