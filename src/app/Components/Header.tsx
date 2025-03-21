@@ -1,9 +1,9 @@
 export default function Header() {
   return (
     <div className="header">
-      <img src="vercel.svg"  className="imglogo"></img>
+      <h1 className="logo"> Caminhos da fala </h1>
       <div className="menudropdonw">
-        PROJETOS
+        <img src="./Hamburguer.png"></img>
         <ul className="opcoes">
           <li>
             <a
