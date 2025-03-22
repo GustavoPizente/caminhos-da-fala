@@ -1,4 +1,6 @@
 import styles from "./content.module.css"
+import Scene from "./Scene";
+
 
 export default function Content() {
     return (
@@ -12,6 +14,7 @@ export default function Content() {
 
         <img src="imgslider.png" className={styles.imgslider} alt="slider" />
         </div>
+        <Scene/>
         <div className={styles.sobre}>
 
         <img src="imgsobre.png" className={styles.imgsobre} alt="naiarabenecdicto" />
