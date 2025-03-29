@@ -1,7 +1,6 @@
 .content {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
     display: flex
 ;
     flex-direction: column;
@@ -9,19 +8,39 @@
 }
 .banner1 {
 
-    width: 90%;
-    height: 70vh;
-    margin: 10%;
-    border: 1px solid blue;
+    display: flex
+    ;
+        width: 100%;
+        height: 70vh;
+        margin: 0%;
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
 
 }
 
-.imgbanner1 {
+.textobanner1 {
 
-
-    width: 100%;
-    height: auto;
+    display: flex;
+    font-size: 0.45rem;
+  font-family: 'Antropos', sans-serif;
+  margin: 2%;
+  text-align: center;
 }
+
+.textobanner1 p {
+
+    font-size: 0.7rem;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    margin: 4%;
+}
+
+
+
 
 .slidertecnico {
 

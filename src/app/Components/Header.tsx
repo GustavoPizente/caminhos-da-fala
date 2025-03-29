@@ -1,9 +1,11 @@
+
+
 export default function Header() {
   return (
     <div className="header">
-      <h1 className="logo"> Caminhos da fala </h1>
+      <h1 className="logo"> Caminhos da fala <b><h2> Fonoaudióloga Naiara Mobiglia Benedicto</h2></b> </h1>
       <div className="menudropdonw">
-        <img src="./Hamburguer.png"></img>
+        <img src="./Hamburguer.png"></img> 
         <ul className="opcoes">
           <li>
             <a
