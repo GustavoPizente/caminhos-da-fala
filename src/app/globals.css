@@ -24,6 +24,11 @@
  
 }
 
+body {
+
+  margin: 0%;
+}
+
 .logo {
   height: 3.8vh;
   font-size: 1.3rem;
