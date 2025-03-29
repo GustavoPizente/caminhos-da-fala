@@ -1,3 +1,4 @@
+import Hamburguer from "./Hamburguer";
 
 
 export default function Header() {
@@ -5,7 +6,7 @@ export default function Header() {
     <div className="header">
       <h1 className="logo"> Caminhos da fala <b><h2> Fonoaudióloga Naiara Mobiglia Benedicto</h2></b> </h1>
       <div className="menudropdonw">
-        <img src="./Hamburguer.png"></img> 
+        <Hamburguer/> 
         <ul className="opcoes">
           <li>
             <a

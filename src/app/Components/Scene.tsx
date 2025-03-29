@@ -12,7 +12,7 @@ function Model() {
 
 export default function Scene() {
   return (
-    <Canvas style={{ height: "40vh",  }}>
+    <Canvas style={{ height: "40vh", width: '90%', background: 'linear-gradient(180deg, #6DA8B8, #A4CCD6)'}}>
       <Suspense>
         <Model />
       </Suspense>

@@ -1,5 +1,7 @@
+import BtnAgendar from "./BtnAgendar";
 import styles from "./content.module.css"
 import Scene from "./Scene";
+
 
 
 export default function Content() {
@@ -14,7 +16,7 @@ export default function Content() {
           <h1> Explore os caminhos da sua expressão <br></br> <p>Adultos, crianças, idosos todos precisam de acompanhamento profissional de uma fonoaudiologo cnehcendo o txto aqui só pela foamcao mesmo nada com anada só pencher</p>   </h1>
         </div>
 
-        <img src="btnagendar.png" className={styles.btnagendar}></img>
+        <BtnAgendar/>
         </div>
         <div className={styles.slidertecnico}>
 
