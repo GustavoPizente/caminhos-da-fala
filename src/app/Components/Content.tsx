@@ -1,4 +1,4 @@
-import { blur } from "three/tsl";
+
 import BtnAgendar from "./BtnAgendar";
 import styles from "./content.module.css";
 import Scene from "./Scene";
