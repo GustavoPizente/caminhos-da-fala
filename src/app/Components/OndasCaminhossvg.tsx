@@ -1,0 +1,23 @@
+import React from "react";
+import styles from "./content.module.css";
+
+const OndasCaminhos = () => {
+
+    return (
+
+
+        <svg className={styles.ondascaminhos} width="292" height="78" viewBox="0 0 292 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M238.5 28.4203C216 28.4203 203.703 12.5697 188.86 10.245C174.017 7.92029 168.508 11.1754 142.727 23.5104C116.945 35.8453 98 23.5104 77.5 17.4203" stroke="#88B4BF" strokeWidth="3" strokeDasharray="6 6"/>
+<path d="M260.466 24.9665C267.628 24.0684 285.465 13.2012 280.637 0.999983" stroke="#88B4BF" strokeWidth="3" strokeDasharray="4 4"/>
+<path d="M183 62.5664C157.419 59.2235 143.209 74.5256 126 75.9204C108.791 77.3152 103.589 69.9673 73.6977 62.5664C43.8059 55.1654 23 64.9164 23 71.9204" stroke="#88B4BF" strokeWidth="2" strokeDasharray="6 6"/>
+<path d="M1 50.6284C14.5928 43.0906 27.9791 37.6805 52.6261 34.7099C82.3894 34.3764 77.6409 43.9427 106.913 50.6284C136.186 57.3141 151.088 37.4996 170.781 34.7099C190.473 31.9203 197.782 35.8265 231.987 50.6284C266.192 65.4303 290 45.9283 290 31.9203" stroke="#6DB8A3" strokeOpacity="0.8" strokeWidth="4" strokeDasharray="6 6"/>
+</svg>
+
+        
+
+
+    )
+}
+
+
+export default OndasCaminhos

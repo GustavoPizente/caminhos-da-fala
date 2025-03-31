@@ -11,13 +11,17 @@
     display: flex
     ;
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         margin: 0%;
         background-color: white;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
         padding-top: 5%;
+        padding-bottom: 5%;
+        justify-content: space-evenly;
+        box-shadow: 0px 8px 20px rgba(109,184,163);
+
 
 }
 
@@ -42,14 +46,90 @@
 
 
 
+.buttonblur {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: rgba(105, 162, 177, 0.5); 
+    
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;  
+    padding: 0px;
 
-.slidertecnico {
+}
+  
+  /* Efeito de Blur Giratório*/
+  .buttonblur .blureffect {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    background-color: white;
+    filter: blur(20px);
+    opacity: 0.8;
+    animation: spin-slow 3s linear infinite;  
+  }
 
-    width: 90%;
-    height: 50vh;
-    margin: 10%;
-    border: 1px solid orange;
+  .shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 10%,
+      rgba(255, 255, 255, 0.6) 20%,
+      rgba(255, 255, 255, 0) 30%
+    );
+    transform: skewX(-20deg);
+    animation: shine-move 2.5s infinite linear;
+    z-index: 11; /* Mantém o brilho acima do botão */
+  }
+  
+  
+   
+  @keyframes spin-slow {
+    0% { transform: rotate(0deg) translate(0, 0); }
+    100% { transform: rotate(360deg) translate(0, 0); }
+  }
 
+  @keyframes shine-move {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 200%;
+    }
+  }
+
+  .btnagendarsvg{
+
+    z-index: 10;
+  }
+  
+
+
+
+.banner2 {
+
+    background: white;
+    width: 120%;
+    height: 90vh;
+    margin-top: 10%;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .imgslider {
@@ -57,6 +137,35 @@
 
     width: 100%;
     height: auto;
+    height: 30vh;
+}
+
+.txtbanner2 {
+
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.txtbanner2 h1 {
+
+    font-size: 10px;
+    background-color: green;
+    
+}
+
+.txtbanner2 h2 {
+
+    font-size: 10px;
+    
+}
+
+.ondascaminhos{
+
+    width: 100%;
 }
 .sobre{
 

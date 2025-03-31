@@ -25,15 +25,15 @@ const Hamburguer = () => {
 </filter>
 <linearGradient id="paint0_linear_2080_16" x1="18.928" y1="6.1867" x2="18.928" y2="10.1237" gradientUnits="userSpaceOnUse">
 <stop stopColor="#6DA8B8"/>
-<stop offset="1" stop-color="#A4CCD6"/>
+<stop offset="1" stopColor="#A4CCD6"/>
 </linearGradient>
 <linearGradient id="paint1_linear_2080_16" x1="18.928" y1="19.1227" x2="18.928" y2="23.6221" gradientUnits="userSpaceOnUse">
-<stop stop-color="#9BC6D1"/>
-<stop offset="1" stop-color="#EDFBFF"/>
+<stop stopColor="#9BC6D1"/>
+<stop offset="1" stopColor="#EDFBFF"/>
 </linearGradient>
 <linearGradient id="paint2_linear_2080_16" x1="18.928" y1="12.3735" x2="18.928" y2="16.3106" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6DA8B8"/>
-<stop offset="1" stop-color="#EDFBFF"/>
+<stop stopColor="#6DA8B8"/>
+<stop offset="1" stopColor="#EDFBFF"/>
 </linearGradient>
 </defs>
 </svg>
