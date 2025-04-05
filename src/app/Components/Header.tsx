@@ -1,9 +1,33 @@
+"use client";
+
 import Hamburguer from "./Hamburguer";
+import { useEffect, useState } from "react";
+import styles from "./header.module.css";
 
 
 export default function Header() {
+
+  const [fixar, setFixar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setFixar(true);
+      } else {
+        setFixar(false);
+      } 
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+
+
+
   return (
-    <div className="header">
+    <div className={`${styles.header} ${fixar ? styles.fixed : ""}`}>
       <h1 className="logo"> Caminhos da fala <b><h2> Fonoaudióloga Naiara Mobiglia Benedicto</h2></b> </h1>
       <div className="menudropdonw">
         <Hamburguer/> 
