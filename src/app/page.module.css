@@ -11,4 +11,5 @@
   background: linear-gradient(180deg, #6DA8B8, #A4CCD6);
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }

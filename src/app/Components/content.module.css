@@ -1,146 +1,130 @@
 @font-face {
-  font-family: 'Antropos';
-  src: url('/AntroposFreefont-BW2G.ttf') format('woff2');
+  font-family: "Antropos";
+  src: url("/AntroposFreefont-BW2G.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
-
-
 }
 
 .content {
-    width: 100%;
-    height: 100%;
-    display: flex
-;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
 }
 .banner1 {
-
-    display: flex
-    ;
-        width: 100%;
-        height: 80vh;
-        margin: 0%;
-        background-color: white;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        justify-content: space-evenly;
-        box-shadow: 0px 8px 20px rgba(109,184,163);
-
-
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin: 0%;
+  background-color: white;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: space-evenly;
+  box-shadow: 0px 8px 20px rgba(109, 184, 163);
 }
 
 .textobanner1 {
-
-    display: flex;
-    font-size: 0.45rem;
-  font-family: 'Antropos', sans-serif;
+  display: flex;
+  font-size: 0.45rem;
+  font-family: "Antropos", sans-serif;
   margin: 2%;
   text-align: center;
 }
 
 .textobanner1 p {
-
-    font-size: 0.7rem;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: justify;
-    margin: 4%;
+  font-size: 0.7rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  margin: 4%;
 }
-
-
 
 .buttonblur {
-    position: relative;
-    overflow: hidden;
-    color: white;
-    background-color: rgba(105, 162, 177, 0.5); 
-    
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;  
-    padding: 0px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background-color: rgba(105, 162, 177, 0.5);
 
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 0px;
 }
-  
-  /* Efeito de Blur Giratório*/
-  .buttonblur .blureffect {
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    top: -25%;
-    left: -25%;
-    background-color: white;
-    filter: blur(20px);
-    opacity: 0.8;
-    animation: spin-slow 3s linear infinite;  
-  }
 
-  .shine {
-    position: absolute;
-    top: 0;
+/* Efeito de Blur Giratório*/
+.buttonblur .blureffect {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background-color: white;
+  filter: blur(20px);
+  opacity: 0.8;
+  animation: spin-slow 3s linear infinite;
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0.6) 20%,
+    rgba(255, 255, 255, 0) 30%
+  );
+  transform: skewX(-20deg);
+  animation: shine-move 2.5s infinite linear;
+  z-index: 11; /* Mantém o brilho acima do botão */
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  100% {
+    transform: rotate(360deg) translate(0, 0);
+  }
+}
+
+@keyframes shine-move {
+  from {
     left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0.6) 20%,
-      rgba(255, 255, 255, 0) 30%
-    );
-    transform: skewX(-20deg);
-    animation: shine-move 2.5s infinite linear;
-    z-index: 11; /* Mantém o brilho acima do botão */
   }
-  
-  
-   
-  @keyframes spin-slow {
-    0% { transform: rotate(0deg) translate(0, 0); }
-    100% { transform: rotate(360deg) translate(0, 0); }
+  to {
+    left: 200%;
   }
+}
 
-  @keyframes shine-move {
-    from {
-      left: -100%;
-    }
-    to {
-      left: 200%;
-    }
-  }
-
-  .btnagendarsvg{
-
-    z-index: 10;
-  }
-  
-
-
+.btnagendarsvg {
+  z-index: 10;
+}
 
 .banner2 {
-
-    background: white;
-    width: 120%;
-    height: 90vh;
-    display: flex
-;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 5%;
+  background: white;
+  width: 120%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5%;
 }
-
 
 .slider {
   width: 100%;
@@ -150,67 +134,184 @@
   width: 100%;
   height: 30vh;
   object-fit: cover;
-  margin: 5%;;
+  margin: 5%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
 .txtbanner2 {
-
-    display: flex
-;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
 .txtbanner2 h1 {
-
-  
-  display: flex
-  ;
-      text-align: center;
-      width: 100%;
-      height: 100px;
-      font-size: 2.6vh;
-      background-image: url(/gizesazuis.png);
-      background-size: cover;
-      background-position: center bottom;
-      background-repeat: no-repeat;
-      font-family: 'Antropos', sans-serif;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 0;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  font-size: 2.6vh;
+  background-image: url(/gizesazuis.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  font-family: "Antropos", sans-serif;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .txtbanner2 h2 {
-
-    font-size: 2vh;
-    font-family: "Inria Sans", sans-serif;
+  font-size: 2vh;
+  font-family: "Inria Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
   margin-top: 0;
-    
 }
 
-.ondascaminhos{
-
-    width: 100%;
+.ondascaminhos {
+  width: 100%;
 }
-.sobre{
 
-    width: 90%;
-    height: 40vh;
-    margin: 10%;
-    border: 1px solid yellow
+/*Banner técnico*/
+
+
+.bannertecnicofundo {
+  background-image: url("/passos.png"); /* se a imagem estiver na pasta 'public' */
+  display: flex;
+  justify-content: center;
+  width: 120%;
+  
+}
+
+.bannertecnico {
+  width: 85%;
+  height: 100vh;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.7); /* branco com 70% de opacidade */
+
+}
+
+.tecnicoum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgtecnicoum {
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.tecnicoum h1 {
+  background-color: white;
+  margin: 2%;
+  text-align: center;
+  font-size: 1.8vh;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+}
+
+.tecnicodois {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgtecnicodois {
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.tecnicodois h1 {
+  background-color: white;
+  margin: 2%;
+  text-align: center;
+  font-size: 1.8vh;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+}
+.tecnicotres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgtecnicotres {
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.tecnicotres h1 {
+  background-color: white;
+  margin: 2%;
+  text-align: center;
+  font-size: 1.8vh;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+}
+
+/*Banner Sobre*/
+
+.sobre {
+  width: 100%;
+  height: 75vh;
+  margin: 10%;
+  background-color: #FFFCF6;
+  border-radius: 1%;
+  display: flex
+  ;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-evenly;
+      align-items: center;
 }
 
 .imgsobre {
+  width: 70%;
+  height: auto;
+  padding: 5%;
+}
+
+.titulosobre {
+
+  text-align: center;
 
 
-    width: 100%;
-    height: auto;
+
+}
+
+.txtsobre h1{
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.7vh;
+  
+}
+
+.titulosobre h2{
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4vh;
+  margin:4%
+  
+}
+.txtsobre h3 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.9vh;
+  margin: 4%;
+
+  
 }
