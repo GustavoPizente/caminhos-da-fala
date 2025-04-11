@@ -4,22 +4,24 @@ import Scene from "./Scene";
 import OndasCaminhos from "./OndasCaminhossvg";
 import Slider from "./Slider";
 
-export default function Content() {
+
+export default function Content({marginTop}:{marginTop:boolean}) {
   return (
     <div className={styles.content}>
-      <div className={styles.banner2}>
+
+<div className={`${styles.banner2} ${marginTop ? styles.margintop : ""}`}>
+      
         <Slider />
 
         <div className={styles.txtbanner2}>
-          <h1> Fonoaudiologia Integrativa</h1> <br />{" "}
+          {/*<h1> Fonoaudiologia Integrativa</h1> <br />{" "}*/}
           <h2>
-            A comunicação é essencial em todas as fases da vida, mas nem sempre
-            damos a devida atenção ao seu desenvolvimento. No Caminhos da Fala,
-            mostro que a fonoaudiologia vai além de corrigir dificuldades na
+            A fonoaudiologia vai além de corrigir dificuldades na
             fala – ela ajuda na respiração, na postura e até na forma como nos
             expressamos no dia a dia. Cuidar da fala é cuidar do corpo e da
             conexão com o mundo.
-          </h2>
+          </h2> 
+        
         </div>
         <OndasCaminhos />
       </div>
