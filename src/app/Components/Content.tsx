@@ -23,31 +23,17 @@ export default function Content({marginTop}:{marginTop:boolean}) {
           </h2> 
         
         </div>
-        <OndasCaminhos />
+       { /*<OndasCaminhos />*/}
+       <div className={styles.bottombanner2}>
+
+       <div className={styles.chamadabanner2}>
+  <img src="/logo.png" className={styles.logo} />
+  <img src="/btnsaibamais.png" className={styles.saibamais} />
+</div>
+
+
+       </div>
       </div>
-      <div className={styles.banner1}>
-        <Scene />
-
-        <div className={styles.textobanner1}>
-          <h1>
-            {" "}
-            Explore os caminhos da sua expressão <br></br>{" "}
-            <p>
-              Adultos, crianças, idosos todos precisam de acompanhamento
-              profissional de uma fonoaudiologo cnehcendo o txto aqui só pela
-              foamcao mesmo nada com anada só pencher
-            </p>{" "}
-          </h1>
-        </div>
-
-        <button className={styles.buttonblur}>
-          <BtnAgendar />
-          <span className={styles.blureffect}></span>
-          <span className={styles.shine}></span>
-        </button>
-      </div>
-
-      <span className={styles.saibamais}></span>
 
       <div className={styles.bannertecnicofundo}>
         <div className={styles.bannertecnico}>
@@ -82,6 +68,31 @@ export default function Content({marginTop}:{marginTop:boolean}) {
             </h1>
           </div>
         </div>
+      </div>
+     
+
+      
+
+      <div className={styles.banner1}>
+        <Scene />
+
+        <div className={styles.textobanner1}>
+          <h1>
+            {" "}
+            Explore os caminhos da sua expressão <br></br>{" "}
+            <p>
+              Adultos, crianças, idosos todos precisam de acompanhamento
+              profissional de uma fonoaudiologo cnehcendo o txto aqui só pela
+              foamcao mesmo nada com anada só pencher
+            </p>{" "}
+          </h1>
+        </div>
+
+        <button className={styles.buttonblur}>
+          <BtnAgendar />
+          <span className={styles.blureffect}></span>
+          <span className={styles.shine}></span>
+        </button>
       </div>
 
       <div className={styles.inspiracao}></div>
