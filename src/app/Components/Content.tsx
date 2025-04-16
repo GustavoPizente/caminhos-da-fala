@@ -2,6 +2,7 @@ import BtnAgendar from "./BtnAgendar";
 import styles from "./content.module.css";
 import Scene from "./Scene";
 import Slider from "./Slider";
+import { motion } from 'framer-motion';
 
 export default function Content({ marginTop }: { marginTop: boolean }) {
   return (
@@ -9,27 +10,45 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
       <div className={`${styles.banner2} ${marginTop ? styles.margintop : ""}`}>
         <Slider />
 
-        <div className={styles.txtbanner2}>
-          {/*<h1> Fonoaudiologia Integrativa</h1> <br />{" "}*/}
-          <span className={styles.fonte20}>
-            Fonoaudiologia </span> para que
-            toda <span className={styles.fonte20}>voz </span> possa{" "}
-            <span className={styles.fonte20}>crescer, encantar </span> e{" "}
-            <span className={styles.fonte24}>expressar</span> {" "}
-            sua essência com mais{" "}
-            <span className={styles.fonte20}>
-              clareza, conforto e confiança.{" "}
-            </span>
-         
-        </div>
+        <motion.div
+  className={styles.txtbanner2}
+  initial={{ scale: 0.95 }}
+  animate={{ scale: 1 }}
+  transition={{ duration: 0.3, ease: 'easeOut' }}
+>
+  <span className={styles.fonte20}>
+    Fonoaudiologia
+  </span> 
+  {" "}para que toda{" "}
+  <span className={styles.fonte20}>voz </span> 
+  {" "}possa{" "}
+  <span className={styles.fonte20}>crescer, encantar </span> 
+  {" "}e{" "}
+  <span className={styles.fonte24}>expressar</span> 
+  {" "}sua essência com mais{" "}
+  <span className={styles.fonte20}>
+    clareza, conforto e confiança.{" "}
+  </span>
+</motion.div>
+
         {/*<OndasCaminhos />*/}
         <div className={styles.bottombanner2}>
-          <div className={styles.chamadabanner2}>
-            <img src="/logo.png" className={styles.logo} />
-            <button className={styles.btnsaibamais}><img src="/btnsaibamais.png" className={styles.saibamais} /></button> 
-          </div>
-        </div>
-      </div>
+        <motion.div
+  className={styles.bgAnimado}
+  initial={{ opacity: 0, x: -100 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 2, ease: 'easeOut' }}
+></motion.div>
+
+  <div className={styles.chamadabanner2}>
+    <img src="/logo.png" className={styles.logo} alt="Logo" />
+    <button className={styles.btnsaibamais}>
+      <img src="/btnsaibamais.png" className={styles.saibamais} alt="Saiba mais" />
+    </button>
+  </div>
+</div>
+</div>
+
 
       <div className={styles.bannertecnicofundo}>
         <div className={styles.bannertecnico}>

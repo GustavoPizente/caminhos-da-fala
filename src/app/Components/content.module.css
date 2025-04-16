@@ -178,23 +178,39 @@
 }
 
 .bottombanner2 {
+  position: relative;
+  width: 100%;
   height: 25%;
-    background-image: url(/ondascaminhos.png);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 110%;
-    display: flex
-    ;
-        flex-direction: column;
-        justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
 }
+
+
+
+.bgAnimado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(/ondascaminhos.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 110%;
+  transform-origin: left;
+  z-index: 1;
+}
+
 
 .chamadabanner2 {
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .btnsaibamais {
