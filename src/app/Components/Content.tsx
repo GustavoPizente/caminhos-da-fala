@@ -1,7 +1,6 @@
 import BtnAgendar from "./BtnAgendar";
 import styles from "./content.module.css";
 import Scene from "./Scene";
-import OndasCaminhos from "./OndasCaminhossvg";
 import Slider from "./Slider";
 
 
