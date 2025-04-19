@@ -16,6 +16,7 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
           animate={{ scale: 1 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
+          <h1 className={styles.chamada}>
           <span className={styles.fonte20}>Fonoaudiologia</span> para que toda{" "}
           <span className={styles.fonte20}>voz </span> possa{" "}
           <span className={styles.fonte20}>crescer, encantar </span> e{" "}
@@ -24,8 +25,12 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
           <span className={styles.fonte20}>
             clareza, conforto e confiança.{" "}
           </span>
+
+          </h1>
+
+          <img className={styles.logo} src="/logo.png"  alt="Logo" />
           <h1 className={styles.dadostxtbanner2}>
-            Atendimentos em Constultório no Rio Tavares/ Florianópolis <br></br>
+            Atendimentos em Constultório no Rio Tavares/ Florianópolis 
             Tratamento integrativo com foco no Neurodesevolvimento alinhado as
             praticas do metodo Padovan
           </h1>
@@ -41,7 +46,7 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
           ></motion.div>
 
           <div className={styles.chamadabanner2}>
-            <img src="/logo.png" className={styles.logo} alt="Logo" />
+            
             
               <button className={styles.btnsaibamais}>
                 <img
