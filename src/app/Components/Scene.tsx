@@ -2,7 +2,8 @@
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useState } from "react";
+import styles from "./Scene.module.css"; // Certifique-se de criar esse CSS
 
 function Model() {
   const { scene } = useGLTF("/WhiteLungs.glb");
@@ -12,34 +13,34 @@ function Model() {
 }
 
 export default function Scene() {
-  const [controlsEnabled, setControlsEnabled] = useState(false);
+  const [overlayVisible, setOverlayVisible] = useState(true);
 
-  useEffect(() => {
-    const handleClick = () => {
-      setControlsEnabled(true);
-    };
-
-    window.addEventListener("click", handleClick, { once: true });
-
-    return () => {
-      window.removeEventListener("click", handleClick);
-    };
-  }, []);
+  const handleClick = () => {
+    setOverlayVisible(false);
+  };
 
   return (
-    <Canvas
-      style={{
-        height: "40vh",
-        width: "90%",
-        background: "linear-gradient(rgb(164, 204, 214), rgba(109, 184, 163))",
-      }}
-    >
-      <Suspense fallback={null}>
-        <Model />
-      </Suspense>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[2, 5, 2]} intensity={1} />
-      <OrbitControls enabled={controlsEnabled} target={[0, 0, 4]} />
-    </Canvas>
+    <div className={styles.wrapper}>
+  {overlayVisible && (
+    <div className={styles.overlay} onClick={handleClick}>
+      <p className={styles.overlayText}>Clique para explorar o sistema da fala</p>
+    </div>
+  )}
+
+      <Canvas
+        style={{
+          height: "40vh",
+          width: "90%",
+          background: "linear-gradient(rgb(164, 204, 214), rgba(109, 184, 163))",
+        }}
+      >
+        <Suspense fallback={null}>
+          <Model />
+        </Suspense>
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[2, 5, 2]} intensity={1} />
+        <OrbitControls enabled={!overlayVisible} target={[0, 0, 4]} />
+      </Canvas>
+    </div>
   );
 }

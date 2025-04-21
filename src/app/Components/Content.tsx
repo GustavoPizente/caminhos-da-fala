@@ -100,8 +100,7 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
             {" "}
             <h1> Fonoaudióloga Naiara Mobiglia Benedicto</h1>
             <h2>
-              pela USP Ribeirão Preto, residencia em Nao sei oande, Pos graducao
-              em tal , formacao em TAL , Padovan em formaçao{" "}
+              Formada pela USP de Ribeirão Preto, com residencia no Hospital das Clínicas com em foco Saúde Família. Terapeuta INPP (Institute for Neuro Physiological Psychology) e Metodo Padovan de Reorganização Multifucnional  em Formação {" "}
             </h2>{" "}
           </div>
 

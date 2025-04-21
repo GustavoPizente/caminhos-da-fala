@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react'
 import styles from './content.module.css'
+import BtnAgendar from './BtnAgendar'
 
 export default function BannerTecnico() {
   const sectionsRef = useRef<HTMLDivElement[]>([])
@@ -19,7 +20,7 @@ export default function BannerTecnico() {
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.7, // 60% visível para considerar "em foco"
+        threshold: 0.6, // 60% visível para considerar "em foco"
       }
     )
 
@@ -69,7 +70,8 @@ export default function BannerTecnico() {
           </div>
         ))}
 
-        <button className={styles.buttonblur}>
+        <button className={styles.buttonblurtecnico}>
+          <BtnAgendar/>
           <span className={styles.blureffect}></span>
           <span className={styles.shine}></span>
         </button>
