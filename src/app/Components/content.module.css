@@ -254,101 +254,73 @@ margin-top: 7%;
 
 /*Banner técnico*/
 
-
 .bannertecnicofundo {
-  background-image: url("/passos.png"); /* se a imagem estiver na pasta 'public' */
-  display: flex;
-  justify-content: center;
-  width: 120%;
-  
+  background-image: url("/passos.png");
+  background-size: 100%;
+  background-position: center;
+  overflow-y: auto;
 }
 
+
 .bannertecnico {
-  width: 85%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.7); /* branco com 70% de opacidade */
+  gap: 100px;
   align-items: center;
+  background-color:rgba(255, 255, 255, 0.5)
 
+  ;
 }
 
 .titulobannertecnico {
-
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  background-color: white;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
   text-align: center;
-
-
+    width: 95%;
+    background-color: white
+  
 }
 
-.tecnicoum {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.blocoTecnico {
+  opacity: 0.3;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+  filter: blur(1px);
+  max-width: 700px;
+  text-align: center;
+  display: flex
+  ;
+      flex-direction: column;
+      align-items: center;
 }
 
-.imgtecnicoum {
-  width: 50%;
+.blocoTecnico img {
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
   border: 2px solid white;
+
+    
 }
 
-.tecnicoum h1 {
-  background-color: white;
-  margin: 2%;
-  text-align: center;
-  font-size: 1.8vh;
+.txtTecnico {
+  font-size: 0.9rem;
+  margin-top: 20px;
   font-family: "Inria Sans", sans-serif;
   font-weight: 300;
-}
-
-.tecnicodois {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.imgtecnicodois {
-  width: 50%;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-
-.tecnicodois h1 {
+  font-size: 14px;
   background-color: white;
-  margin: 2%;
-  text-align: center;
-  font-size: 1.8vh;
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 300;
-}
-.tecnicotres {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 95%;
 }
 
-.imgtecnicotres {
-  width: 50%;
-  border-radius: 50%;
-  border: 2px solid white;
+/* Quando o bloco está visível */
+.ativo {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  filter: blur(0px) !important;
 }
 
-.tecnicotres h1 {
-  background-color: white;
-  margin: 2%;
-  text-align: center;
-  font-size: 1.8vh;
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 300;
-}
 
 /*Banner Sobre*/
 

@@ -3,6 +3,7 @@ import styles from "./content.module.css";
 import Scene from "./Scene";
 import Slider from "./Slider";
 import { motion } from "framer-motion";
+import BannerTecnico from "./BannerTecnico"
 
 export default function Content({ marginTop }: { marginTop: boolean }) {
   return (
@@ -61,48 +62,7 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
         </div>
       </div>
 
-      <div className={styles.bannertecnicofundo}>
-        <div className={styles.bannertecnico}>
-
-          <h1 className={styles.titulobannertecnico}>Acompanhmento fonaudiológico para diversas demandas</h1>
-          <div className={styles.tecnicoum}>
-            <img className={styles.imgtecnicoum} src="./imgtecnicoum.png"></img>
-            <h1 className={styles.txttecnicoum}>
-              A fonoaudiologia auxilia no controle da abertura bucal, melhorando
-              fala, mastigação e deglutição com exercícios para mobilidade e
-              coordenação dos músculos orofaciais.
-            </h1>
-          </div>
-          <div className={styles.tecnicodois}>
-            <img
-              className={styles.imgtecnicodois}
-              src="./imgtecnicodois.jpg"
-            ></img>
-            <h1 className={styles.txttecnicodois}>
-              A fonoaudiologia ajuda na reabilitação da ATM, aliviando dores e
-              tensões com exercícios que melhoram a mobilidade, coordenação e
-              equilíbrio muscular da mandíbula.
-            </h1>
-          </div>
-          <div className={styles.tecnicotres}>
-            <img
-              className={styles.imgtecnicotres}
-              src="./imgtecnicotres.jpg"
-            ></img>
-            <h1 className={styles.txttecnicotres}>
-              A fonoaudiologia ajuda na reabilitação da ATM, aliviando dores e
-              tensões com exercícios que melhoram a mobilidade, coordenação e
-              equilíbrio muscular da mandíbula.
-            </h1>
-          </div>
-          
-        <button className={styles.buttonblur}>
-          <BtnAgendar />
-          <span className={styles.blureffect}></span>
-          <span className={styles.shine}></span>
-        </button>
-        </div>
-      </div>
+      <BannerTecnico/>
 
       <div className={styles.banner1}>
         <Scene />
