@@ -31,7 +31,7 @@ export default function Scene() {
         style={{
           height: "40vh",
           width: "90%",
-          background: "linear-gradient(rgb(164, 204, 214), rgba(109, 184, 163))",
+          background: "#e1c28f5e",
         }}
       >
         <Suspense fallback={null}>
