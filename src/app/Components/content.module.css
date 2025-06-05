@@ -140,7 +140,7 @@
 .banner2 {
   background: white;
     width: 120%;
-    height: 87vh;
+    height: 85vh;
     display: flex
 ;
     flex-direction: column;
@@ -245,6 +245,7 @@
 .localizacao {
 
   font-size: 13px;
+  font-weight: 500;
 }
 
 .bottombanner2 {
@@ -260,6 +261,7 @@
 
 .mapa {
   width: 85%;
+  margin-bottom: 2%;
 }
 
 
@@ -365,13 +367,13 @@
   font-weight: 300;
   font-size: 14px;
   background-color: white;
-  width: 95%;
+  width: 80%;
 }
 
 /* Quando o bloco está visível */
 .ativo {
   opacity: 1 !important;
-  transform: scale(1) !important;
+  transform: scale(1.2) !important;
   filter: blur(0px) !important;
 }
 
