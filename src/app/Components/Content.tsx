@@ -28,13 +28,14 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
           </span>
 
           </h1>
-
-          <img className={styles.logo} src="/logo.png"  alt="Logo" />
+          <img className={styles.ondamarrom} src="/ondamarrom.svg"  alt="Logo" />
           <h1 className={styles.dadostxtbanner2}>
-            Atendimento Integrativo com foco no Neurodesevolvimento alinhado as
-            praticas do metodo Padovan. <br></br><br></br> Em Florianópolis com Constultório no Rio Tavares, Itacorubi e Lagoa da Conceição. 
-           
+            
+           <div className={styles.atendimento}>Atendimento <span className={styles.fonte24}>Fonoaudiólogico  </span>para todas as idades com foco no <span className={styles.fonte24}>Neurodesenvolvimento </span>  alinhado as praticas do método <span className={styles.fonte24}>Padovan. </span></div> 
+           <p className={styles.localizacao}>Em Florianópolis com Consultório no Rio Tavares, Itacorubi e Lagoa da Conceição, além do atendimento á domicílio.</p>
+           <img className={styles.mapa} src="/mapa.svg"  alt="Logo" />
           </h1>
+          
         </motion.div>
 
         {/*<OndasCaminhos />*/}
@@ -51,7 +52,7 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
             
               <button className={styles.btnsaibamais}>
                 <img
-                  src="/btnsaibamais.png"
+                  src="/saibamaismarrom.svg"
                   className={styles.saibamais}
                   alt="Saiba mais"
                 />

@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -2%;
+  margin-top: -0.5%;
  
 }
 .banner1 {
@@ -140,7 +140,7 @@
 .banner2 {
   background: white;
     width: 120%;
-    height: 85vh;
+    height: 87vh;
     display: flex
 ;
     flex-direction: column;
@@ -155,12 +155,12 @@
 
 .slider {
   width: 100%;
-  height: 72vh;
+  height: 100%;
 }
 
 .slideImg {
   width: 100%;
-  height: 28vh;
+  height: 25.5vh;
   object-fit: cover;
   margin-top: 10%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -176,29 +176,43 @@
 .txtbanner2 {
   text-align: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-  padding: 2%;
   font-size: 16px;
   font-family: "Inria Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-  margin-top: 2%;
+  margin-top: 3.5%;
   line-height: 1.2;
-  background-color: #E4CDA755
+  background-color: #E4CDA7A8;
+
 ;
-  height: 80vh;
+  height: 140vh;
 }
 .dadostxtbanner2{
     font-family: "Inria Sans", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    background-color:white
+    background-color:white;
+    height: 45vh;
+    padding: 2%;
+        display: flex
+;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     
+}
+.ondamarrom {
+
+  position: absolute;
+  left: 0;
+  width: 99%;
+  top: -2;
 }
 
 
@@ -213,9 +227,6 @@
 }
 
 .logo {
-  margin-top: 4%;
-  width: 15%;
-  display: none;
 }
 
 .fonte24 {
@@ -226,14 +237,29 @@
 
 }
 
+.atendimento {
+
+    width: 89%;
+    margin-top: 4%;
+}
+.localizacao {
+
+  font-size: 13px;
+}
+
 .bottombanner2 {
   position: relative;
   width: 100%;
-  height: 25%;
+  height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  margin-top: -7%;
+}
+
+.mapa {
+  width: 85%;
 }
 
 
@@ -244,7 +270,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(/ondascaminhos.png);
+  background-image: url(/ondaazul.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -282,7 +308,7 @@
 /*Banner técnico*/
 
 .bannertecnicofundo {
-  background-image: url("/passos.png");
+  /*background-image: url("/passos.png");*/
   background-size: 100%;
   background-position: center;
   overflow-y: auto;
@@ -292,24 +318,22 @@
 .bannertecnico {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
   padding-bottom: 6%;
   align-items: center;
-  background-color:rgba(255, 255, 255, 0.5)
+  background-color:rgba(255, 255, 255, 0.8)
 
   ;
 }
 
 .titulobannertecnico {
-  margin-top: 15%;
-  margin-bottom: 5%;
-  font-size: 1.2rem;
-  text-align: center;
-    width: 95%;
-    background-color: white;
+  margin-top: 10%;
+  margin-bottom: 0%;
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
     font-family: "Inria Sans", sans-serif;
     font-weight: 300;
-  
 }
 
 .blocoTecnico {

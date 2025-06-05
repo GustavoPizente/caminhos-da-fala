@@ -36,9 +36,11 @@ export default function BannerTecnico() {
   return (
     <div className={styles.bannertecnicofundo}>
       <div className={styles.bannertecnico}>
+        
         <h1 className={styles.titulobannertecnico}>
-          Acompanhamento fonaudiológico para diversas demandas
+          Fonoaudiologia para que toda pessoa possa comunicar e expressar sua essência com mais clareza, conforto e confiança
         </h1>
+        <img className={styles.logo} src="/logocompleto.svg"  alt="Logo" />
 
         {[
           {
