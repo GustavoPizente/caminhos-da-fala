@@ -31,9 +31,9 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
 
           <img className={styles.logo} src="/logo.png"  alt="Logo" />
           <h1 className={styles.dadostxtbanner2}>
-            Atendimentos em Constultório no Rio Tavares/ Florianópolis 
-            Tratamento integrativo com foco no Neurodesevolvimento alinhado as
-            praticas do metodo Padovan
+            Atendimento Integrativo com foco no Neurodesevolvimento alinhado as
+            praticas do metodo Padovan. <br></br><br></br> Em Florianópolis com Constultório no Rio Tavares, Itacorubi e Lagoa da Conceição. 
+           
           </h1>
         </motion.div>
 

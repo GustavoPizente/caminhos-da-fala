@@ -19,16 +19,16 @@ export default function Slider() {
       className={styles.slider}
     >
       <SwiperSlide>
-        <img src="/caminhosnai.png" alt="Imagem 1" className={styles.slideImg} />
+        <img src="/SalaEspacoCurioso.png" alt="Imagem 1" className={styles.slideImg} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/imgbanner1.png" alt="Imagem 2" className={styles.slideImg} />
+        <img src="imgbanner1.png" alt="Imagem 2" className={styles.slideImg} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/imgslider.png" alt="Imagem 3" className={styles.slideImg} />
+        <img src="/SalaCreser.png" alt="Imagem 3" className={styles.slideImg} />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/imgbanner1.png" alt="Imagem 2" className={styles.slideImg} />
+        <img src="/Bolha.png" alt="Imagem 2" className={styles.slideImg} />
       </SwiperSlide>
     </Swiper>
   );
