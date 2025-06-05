@@ -6,16 +6,7 @@ export default function Footer() {
 <div className="menudropdonwfooter ">
         Contato
         <ul className="opcoesfooter">
-          <li>
-            <a
-              href="https://camboim-biojoias-git-master-gustavopizentes-projects.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="itemopcoesfooter "
-            >
-              curriculo
-            </a>
-          </li>
+          
           <li>
             <a
               href="https://arvores-de-pindorama.vercel.app/"
@@ -23,17 +14,17 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="itemopcoesfooter "
             >
-              insta
+              Whatapp
             </a>
           </li>
           <li>
             <a
-              href="https://portifolio-seven-steel.vercel.app/"
+              href="https://www.instagram.com/caminhosdafala.fono/"
               target="_blank"
               rel="noopener noreferrer"
               className="itemopcoesfooter "
             >
-              email
+              Instagram
             </a>
           </li>
           <li>
@@ -43,7 +34,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="itemopcoesfooter "
             >
-              Whats
+             Email
             </a>
           </li>
         </ul>

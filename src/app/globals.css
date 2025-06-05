@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Antropos";
   src: url("/AntroposFreefont-BW2G.ttf") format("woff2");
@@ -44,10 +48,12 @@ body {
   height: auto;
   position: absolute;
   color: white;
-  background-color: #5b3667;
+  background-color: #6da8b8;
   border: 1px solid black;
   text-decoration: none;
   z-index: 20;
+  left:50%;
+  margin-top:4%;
 
   list-style-type: none;
   padding: 0;
@@ -77,7 +83,7 @@ a {
 }
 
 .opcoes > li:hover {
-  background-color: #23232b;
+  background-color: #3d6974;
 }
 
 /*FOOTER*/
@@ -113,7 +119,7 @@ a {
   width: 170px;
   height: auto;
   position: absolute;
-  top: 339%;
+  margin-bottom: 200px;
   color: black;
   background-color: white;
   border: 1px solid #69A2B1;

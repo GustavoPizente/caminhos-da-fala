@@ -92,7 +92,7 @@ Expressar-se bem é essencial para viver e se relacionar com confiança.
         <img className={styles.imgslider} src="/imgslider.png"  alt="Logo" />
       </div>
 
-      <div className={styles.sobre}>
+      <div className={styles.sobre} id ="sobre">
         <img
           src="imgsobre.png"
           className={styles.imgsobre}

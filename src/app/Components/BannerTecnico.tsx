@@ -20,7 +20,7 @@ export default function BannerTecnico() {
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.4 // 60% visível para considerar "em foco"
+        threshold: 0.2// 60% visível para considerar "em foco"
       }
     )
 
@@ -40,7 +40,7 @@ export default function BannerTecnico() {
         <h1 className={styles.titulobannertecnico}>
           Fonoaudiologia para que toda pessoa possa comunicar e expressar sua essência com mais clareza, conforto e confiança
         </h1>
-        <img className={styles.logo} src="/logocompleto.svg"  alt="Logo" />
+        <img id="fonoaudiologia"  className={styles.logo} src="/logocompleto.svg"  alt="Logo" />
 
         {[
           {

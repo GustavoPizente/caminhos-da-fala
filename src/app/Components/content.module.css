@@ -329,13 +329,15 @@
 }
 
 .titulobannertecnico {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 0%;
     font-size: 16px;
     text-align: center;
     width: 90%;
     font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    padding: 3%;
+    background-color: white;
 }
 
 .blocoTecnico {
@@ -356,6 +358,7 @@
   height: auto;
   border-radius: 50%;
   border: 2px solid white;
+  margin:15%;
 
     
 }

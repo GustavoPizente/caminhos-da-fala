@@ -17,17 +17,15 @@ export default function Header({ fixar }: { fixar: boolean}) {
           <Hamburguer />
           <ul className="opcoes">
             <li>
-              <a href="#" className="itemopcoes">CAMBOIMBIOJOIAS</a>
+              <a href="#" className="itemopcoes">Contato</a>
             </li>
             <li>
-              <a href="#" className="itemopcoes">ÁRVORES DE PINDORAMA</a>
+              <a href="#fonoaudiologia" className="itemopcoes">A Fonoaudiologia</a>
             </li>
             <li>
-              <a href="#" className="itemopcoes">PORTIFÓLIO</a>
+              <a href="#sobre" className="itemopcoes">Sobre</a>
             </li>
-            <li>
-              <a href="#" className="itemopcoes">PROTÓTIPOS FIGMA</a>
-            </li>
+            
           </ul>
         </div>
       </div>
