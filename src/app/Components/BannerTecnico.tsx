@@ -20,7 +20,7 @@ export default function BannerTecnico() {
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.6, // 60% visível para considerar "em foco"
+        threshold: 0.4 // 60% visível para considerar "em foco"
       }
     )
 

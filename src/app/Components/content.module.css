@@ -39,12 +39,12 @@
 }
 
 .textobanner1 p {
-  font-size: 0.7rem;
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: justify;
-  margin: 4%;
+  font-size: 14px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+    margin: 4%;
 }
 
 .buttonblur {
@@ -320,7 +320,7 @@
 .bannertecnico {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
   padding-bottom: 6%;
   align-items: center;
   background-color:rgba(255, 255, 255, 0.8)
@@ -438,7 +438,12 @@
 
   margin-top: 5%;
     width: 95%;
-    height: 35vh;
+    height: 1005;
     background-color: #CDAD9E
 
+}
+
+.imgslider {
+
+  width: 100%;
 }

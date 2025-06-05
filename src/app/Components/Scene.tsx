@@ -23,7 +23,7 @@ export default function Scene() {
     <div className={styles.wrapper}>
   {overlayVisible && (
     <div className={styles.overlay} onClick={handleClick}>
-      <p className={styles.overlayText}>Clique para explorar o sistema da fala</p>
+      <p className={styles.overlayText}>Clique para explorar</p>
     </div>
   )}
 

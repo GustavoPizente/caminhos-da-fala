@@ -71,11 +71,11 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
         <div className={styles.textobanner1}>
           <h1>
             {" "}
-            Explore os caminhos da sua expressão <br></br>{" "}
+            Explore os caminhos da sua fala <br></br>{" "}
             <p>
-              Adultos, crianças, idosos todos precisam de acompanhamento
-              profissional de uma fonoaudiologo cnehcendo o txto aqui só pela
-              foamcao mesmo nada com anada só pencher
+              Cada fase da vida traz desafios únicos na comunicação.
+Desde os primeiros sons até a clareza na maturidade, todos precisamos de atenção especializada.
+Expressar-se bem é essencial para viver e se relacionar com confiança.
             </p>{" "}
           </h1>
         </div>
@@ -87,7 +87,10 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
         </button>
       </div>
 
-      <div className={styles.inspiracao}></div>
+      <div className={styles.inspiracao}>
+
+        <img className={styles.imgslider} src="/imgslider.png"  alt="Logo" />
+      </div>
 
       <div className={styles.sobre}>
         <img
