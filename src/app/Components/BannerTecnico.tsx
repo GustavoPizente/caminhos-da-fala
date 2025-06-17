@@ -20,7 +20,7 @@ export default function BannerTecnico() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.70, 
+        threshold: 0.3, 
       }
     );
 
