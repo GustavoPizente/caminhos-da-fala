@@ -13,6 +13,7 @@ export default function Slider() {
       slidesPerView={2.5} // Mostra slide central + partes dos lados
       spaceBetween={30}
       centeredSlides={true}
+      speed={1500}
       navigation
       loop={true}
       autoplay={{ delay: 3000, disableOnInteraction: true }}

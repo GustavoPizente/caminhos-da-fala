@@ -16,6 +16,20 @@
   
    
   }
+
+ /* Estilo para telas maiores que 700px */
+@media (min-width: 700px) {
+  .header {
+    margin-top: 3%;
+  }
+}
+
+/* Estilo para telas maiores que 1300px */
+@media (min-width: 1300px) {
+  .header {
+    margin-top: 1.5%;
+  }
+}
   .fixed {
     position: fixed;
     margin:0;

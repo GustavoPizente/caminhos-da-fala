@@ -31,8 +31,8 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
           <img className={styles.ondamarrom} src="/ondamarrom.svg"  alt="Logo" />
           <h1 className={styles.dadostxtbanner2}>
             
-           <div className={styles.atendimento}>Atendimento <span className={styles.fonte24}>Fonoaudiólogico  </span>para todas as idades com foco no <span className={styles.fonte24}>Neurodesenvolvimento </span>  alinhado as praticas do método <span className={styles.fonte24}>Padovan. </span></div> 
-           <p className={styles.localizacao}>Em Florianópolis com Consultório no Rio Tavares, Itacorubi e Lagoa da Conceição, além do atendimento á domicílio.</p>
+           <div className={styles.atendimento}>Atendimento <span className={styles.fonte24}>Fonoaudiólogico  </span>para todas as idades com foco no <span className={styles.fonte24}>Neurodesenvolvimento </span>  alinhado as praticas do método <span className={styles.fonte24}>Padovan. </span> <p className={styles.localizacao}>Em Florianópolis com Consultório no Rio Tavares, Itacorubi e Lagoa da Conceição, além do atendimento á domicílio.</p></div> 
+           
            <img className={styles.mapa} src="/mapa.svg"  alt="Logo" />
           </h1>
           

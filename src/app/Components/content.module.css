@@ -12,7 +12,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: -0.5%;
- 
 }
 .banner1 {
   display: flex;
@@ -40,11 +39,11 @@
 
 .textobanner1 p {
   font-size: 14px;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-align: justify;
-    margin: 4%;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: justify;
+  margin: 4%;
 }
 
 .buttonblur {
@@ -111,7 +110,7 @@
     rgba(255, 255, 255, 0) 30%
   );
   transform: skewX(-20deg);
-  animation: shine-move 2.5s infinite linear;
+  animation: shine-move 5.5s infinite linear;
   z-index: 11; /* Mantém o brilho acima do botão */
 }
 
@@ -139,15 +138,15 @@
 
 .banner2 {
   background: white;
-    width: 120%;
-    height: 85vh;
-    display: flex
-;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 5%;
-    box-shadow: 0 3px 10px whitesmoke;}
+  width: 120%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5%;
+  box-shadow: 0 3px 10px whitesmoke;
+}
 
 .margintop {
   margin-top: 8vh;
@@ -168,7 +167,6 @@
 }
 
 .swiper-button-prev {
-
   color: red;
   left: 4%;
 }
@@ -177,7 +175,7 @@
   text-align: center;
   align-items: center;
   width: 90%;
-  
+
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -188,62 +186,48 @@
   font-style: normal;
   margin-top: 3.5%;
   line-height: 1.2;
-  background-color: #E4CDA7A8;
+  background-color: #e4cda7a8;
 
-;
   height: 140vh;
 }
-.dadostxtbanner2{
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    background-color:white;
-    height: 45vh;
-    padding: 2%;
-        display: flex
-;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
+.dadostxtbanner2 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: white;
+  height: 45vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .ondamarrom {
-
   position: absolute;
   left: 0;
   width: 99%;
   top: -2;
 }
 
-
-
 .chamada {
-
   font-size: 1.3rem;
-    font-weight: 300;
-    display: none;
-
-
+  font-weight: 300;
+  display: none;
 }
 
 .logo {
 }
 
 .fonte24 {
-
-  
   font-weight: bold;
-  color: #304B52;
-
+  color: #304b52;
 }
 
 .atendimento {
-
-    width: 89%;
-    margin-top: 4%;
+  width: 89%;
+  margin-top: 4%;
 }
 .localizacao {
-
   font-size: 13px;
   font-weight: 500;
 }
@@ -263,8 +247,7 @@
   width: 85%;
   margin-bottom: 2%;
 }
-
-
+/* Estilo para telas maiores que 768px (ex: tablets e desktops) */
 
 .bgAnimado {
   position: absolute;
@@ -280,9 +263,7 @@
   z-index: 1;
 }
 
-
 .chamadabanner2 {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,7 +272,6 @@
 }
 
 .btnsaibamais {
-
   background: none;
   border: none;
   padding: 0;
@@ -302,9 +282,52 @@
   overflow: hidden;
 }
 
-
 .ondascaminhos {
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .mapa {
+    width: 65%;
+  }
+}
+
+@media (min-width: 740px) {
+  .mapa {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .dadostxtbanner2 {
+    flex-direction: row;
+  }
+  .atendimento {
+    margin-top: 0%;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .ondamarrom {
+    top: -30px;
+  }
+  .bottombanner2 {
+    margin-top: 0%;
+  }
+  .mapa {
+    width: 40%;
+  }
+
+  .atendimento {
+
+    width: 37%;
+    margin-top: 0%;
+    font-size: 1.5rem;
+  }
+
+ 
+
 }
 
 /*Banner técnico*/
@@ -316,51 +339,45 @@
   overflow-y: auto;
 }
 
-
 .bannertecnico {
   display: flex;
   flex-direction: column;
   gap: 60px;
   padding-bottom: 6%;
   align-items: center;
-  background-color:rgba(255, 255, 255, 0.8)
-
-  ;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .titulobannertecnico {
   margin-top: 5%;
   margin-bottom: 0%;
-    font-size: 16px;
-    text-align: center;
-    width: 90%;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 500;
-    padding: 3%;
-    background-color: white;
+  font-size: 16px;
+  text-align: center;
+  width: 90%;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 500;
+  padding: 3%;
+  background-color: white;
 }
 
 .blocoTecnico {
-  opacity: 0.3;
-  transform: scale(0.95);
-  transition: all 0.5s ease;
-  filter: blur(1px);
+  opacity: 0;
+  transform: translateX(-50px) scale(1);
+  filter: blur(5px);
+  transition: opacity 1s ease, transform 1.5s ease, filter 1s ease;
+
   max-width: 700px;
   text-align: center;
-  display: flex
-  ;
-      flex-direction: column;
-      align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .blocoTecnico img {
-  max-width: 100%;
-  height: auto;
+  width: 40vh;
+  height: 40vh;
   border-radius: 50%;
-  border: 2px solid white;
-  margin:15%;
-
-    
+  margin: 5%;
 }
 
 .txtTecnico {
@@ -376,10 +393,9 @@
 /* Quando o bloco está visível */
 .ativo {
   opacity: 1 !important;
-  transform: scale(1.2) !important;
+  transform: translateX(0) scale(1.2) !important;
   filter: blur(0px) !important;
 }
-
 
 /*Banner Sobre*/
 
@@ -387,14 +403,13 @@
   width: 100%;
   height: 80vh;
   margin: 10%;
-  background-color: #FFFCF6;
+  background-color: #fffcf6;
   border-radius: 1%;
-  display: flex
-  ;
-      flex-direction: column;
-      align-content: center;
-      justify-content: space-evenly;
-      align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .imgsobre {
@@ -404,28 +419,21 @@
 }
 
 .titulosobre {
-
   text-align: center;
-  
-
-
-
 }
 
-.txtsobre h1{
+.txtsobre h1 {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-size: 1.7vh;
-  
 }
 
-.titulosobre h2{
+.titulosobre h2 {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-size: 1.4vh;
-  margin:4%;
+  margin: 4%;
   margin-top: 2%;
-  
 }
 .txtsobre h3 {
   font-family: "Inria Sans", sans-serif;
@@ -433,20 +441,15 @@
   font-size: 1.9vh;
   margin: 4%;
   text-align: center;
-
-  
 }
 
 .inspiracao {
-
   margin-top: 5%;
-    width: 95%;
-    height: 1005;
-    background-color: #CDAD9E
-
+  width: 95%;
+  height: 1005;
+  background-color: #cdad9e;
 }
 
 .imgslider {
-
   width: 100%;
 }
