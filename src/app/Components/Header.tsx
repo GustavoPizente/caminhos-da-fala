@@ -17,7 +17,7 @@ export default function Header({ fixar }: { fixar: boolean}) {
           <Hamburguer />
           <ul className="opcoes">
             <li>
-              <a href="#" className="itemopcoes">Contato</a>
+              <a href="https://api.whatsapp.com/send?phone=5516981628169" className="itemopcoes">Contato</a>
             </li>
             <li>
               <a href="#fonoaudiologia" className="itemopcoes">A Fonoaudiologia</a>

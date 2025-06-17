@@ -20,7 +20,7 @@ export default function BannerTecnico() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5, 
+        threshold: 0.70, 
       }
     );
 
@@ -51,7 +51,7 @@ export default function BannerTecnico() {
           },
           {
             img: "./imgtecnicodois.jpg",
-            text: "A fonoaudiologia ajuda na reabilitação da ATM, aliviando dores e tensões com exercícios que melhoram a mobilidade, coordenação e equilíbrio muscular da mandíbula.",
+            text: "A fonoaudiologia atua no neurodesenvolvimento auxiliando no estímulo das funções cognitivas, motoras e de linguagem, promovendo uma comunicação mais eficaz e um desenvolvimento geral mais equilibrado.",
           },
           {
             img: "./imgtecnicotres.jpg",
@@ -65,16 +65,16 @@ export default function BannerTecnico() {
               if (el) sectionsRef.current[i] = el;
             }}
           >
-            <img src={item.img} className={styles.imgTecnico} />
+            <div className={styles.fundotecnico}> <img src={item.img} className={styles.imgTecnico} /> </div>
             <h1 className={styles.txtTecnico}>{item.text}</h1>
           </div>
         ))}
 
-        <button className={styles.buttonblurtecnico}>
+        <a href="https://api.whatsapp.com/send?phone=5516981628169" className={styles.buttonblurtecnico}>
           <BtnAgendar />
           <span className={styles.blureffect}></span>
           <span className={styles.shine}></span>
-        </button>
+        </a>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ export default function Scene() {
         style={{
           height: "40vh",
           width: "90%",
-          background: "#e1c28f5e",
+          background: "#6da8b8",
         }}
       >
         <Suspense fallback={null}>

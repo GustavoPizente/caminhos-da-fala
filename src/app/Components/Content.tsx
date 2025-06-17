@@ -50,14 +50,14 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
           <div className={styles.chamadabanner2}>
             
             
-              <button className={styles.btnsaibamais}>
+              <a href="https://api.whatsapp.com/send?phone=5516981628169" className={styles.btnsaibamais} >
                 <img
                   src="/saibamaismarrom.svg"
                   className={styles.saibamais}
                   alt="Saiba mais"
                 />
                 <span className={styles.shine}></span>
-              </button>
+              </a>
            
           </div>
         </div>
@@ -74,17 +74,17 @@ export default function Content({ marginTop }: { marginTop: boolean }) {
             Explore os caminhos da sua fala <br></br>{" "}
             <p>
               Cada fase da vida traz desafios únicos na comunicação.
-Desde os primeiros sons até a clareza na maturidade, todos precisamos de atenção especializada.
-Expressar-se bem é essencial para viver e se relacionar com confiança.
+Desde os primeiros sons até a clareza na maturidade.
+Expressar-se bem é essencial para viver e se relacionar melhor.
             </p>{" "}
           </h1>
         </div>
 
-        <button className={styles.buttonblur}>
-          <BtnAgendar />
-          <span className={styles.blureffect}></span>
-          <span className={styles.shine}></span>
-        </button>
+        <a href="https://api.whatsapp.com/send?phone=5516981628169" className={styles.buttonblur}>
+          <div className={styles.chamadacontato}> Clique e entre em contato</div>
+          
+        
+        </a>
       </div>
 
       <div className={styles.inspiracao}>

@@ -40,17 +40,22 @@
 .textobanner1 p {
   font-size: 14px;
   font-family: "Inria Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   text-align: justify;
   margin: 4%;
+}
+
+
+.chamadacontato {
+  color: rgb(136, 90, 90);
+  font-size: 0.8rem;
 }
 
 .buttonblur {
   position: relative;
   overflow: hidden;
   color: white;
-  background-color: rgba(105, 162, 177, 0.5);
 
   border-radius: 6px;
   font-size: 16px;
@@ -62,7 +67,7 @@
   justify-content: center;
   z-index: 1;
   padding: 0px;
-  top: 5%;
+  top: -5%;
 }
 
 .buttonblurtecnico {
@@ -371,15 +376,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10%;
 }
 
 .blocoTecnico img {
-  width: 40vh;
-  height: 40vh;
-  border-radius: 50%;
-  margin: 5%;
+      width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.35);
+    
+  
 }
 
+.fundotecnico {
+
+    border-radius: 50%;
+    width: 35vh;
+    height: 13vh;
+    background: radial-gradient(circle, #ffffff 0%, #6DA8B8 100%);
+    display: flex
+;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 .txtTecnico {
   font-size: 0.9rem;
   margin-top: 20px;
@@ -446,8 +466,7 @@
 .inspiracao {
   margin-top: 5%;
   width: 95%;
-  height: 1005;
-  background-color: #cdad9e;
+  height: 100%
 }
 
 .imgslider {
