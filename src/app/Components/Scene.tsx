@@ -6,9 +6,10 @@ import { Suspense, useState } from "react";
 import styles from "./Scene.module.css"; // Certifique-se de criar esse CSS
 
 function Model() {
-  const { scene } = useGLTF("/WhiteLungs.glb");
+  const { scene } = useGLTF("/CaminhosDaFalaFono.glb");
   return (
-    <primitive object={scene} position={[2.7, -4.2, 3.1]} scale={[3, 3, 3]} />
+    //*<primitive object={scene} position={[2.7, -4.2, 3.1]} scale={[3, 3, 3]} />*//
+    <primitive object={scene} position={[0,0,0]} scale={[25, 25, 25]} />
   );
 }
 
@@ -27,7 +28,7 @@ export default function Scene() {
     </div>
   )}
 
-      <Canvas
+      <Canvas camera={{ position: [5, 0, 10], fov: 75 }}
         style={{
           height: "40vh",
           width: "90%",
