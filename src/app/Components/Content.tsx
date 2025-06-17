@@ -1,4 +1,4 @@
-import BtnAgendar from "./BtnAgendar";
+
 import styles from "./content.module.css";
 import Scene from "./Scene";
 import Slider from "./Slider";
