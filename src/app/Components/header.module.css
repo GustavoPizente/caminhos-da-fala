@@ -17,6 +17,11 @@
    
   }
 
+  .header a {
+
+    padding: 0;
+  }
+
  /* Estilo para telas maiores que 700px */
 @media (min-width: 700px) {
   .header {

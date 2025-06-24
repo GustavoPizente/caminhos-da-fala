@@ -7,12 +7,13 @@ export default function Header({ fixar }: { fixar: boolean}) {
   return (
     <div className={`${styles.header} ${fixar ? styles.fixed : ""}`}>
       
-      <h1 className="logo">
+      <a  href="#logo"><h1 className="logo" >
         Caminhos da fala{" "}
         <b>
           <h2> Fonoaudióloga Naiara Mobiglia Benedicto</h2>
         </b>
       </h1>
+      </a>
         <div className="menudropdonw">
           <Hamburguer />
           <ul className="opcoes">

@@ -8,7 +8,7 @@ import styles from "./content.module.css";
 
 export default function Slider() {
   return (
-    <Swiper
+    <Swiper id="logo"
       modules={[Navigation, Autoplay]}
       slidesPerView={2.5} // Mostra slide central + partes dos lados
       spaceBetween={30}
