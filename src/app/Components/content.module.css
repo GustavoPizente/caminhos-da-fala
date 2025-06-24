@@ -46,7 +46,6 @@
   margin: 4%;
 }
 
-
 .chamadacontato {
   color: rgb(136, 90, 90);
   font-size: 0.8rem;
@@ -158,7 +157,7 @@
 }
 
 .slider {
-  width: 100%;
+  width: 82%;
   height: 100%;
 }
 
@@ -311,11 +310,20 @@
     margin-top: 0%;
     width: 60%;
   }
+
+  .imgsobre {
+    width: 60% !important;
+  }
+ 
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .ondamarrom {
-    top: -30px;
+    top: -2%;
+    width: 170%;
+    align-content: center;
+    left: -12%;
+    height: 10%;
   }
   .bottombanner2 {
     margin-top: 0%;
@@ -325,14 +333,27 @@
   }
 
   .atendimento {
-
     width: 37%;
     margin-top: 0%;
     font-size: 1.5rem;
   }
+  .txtbanner2 {
+    margin-top: 0%;
+    height: 50%;
+  }
+  .banner2 {
+    width: 140vh;
+    height: 100vh;
+    margin-top: 0.5%;
+  }
+  .slider {
+    width: 132vh;
+  }
+  .imgsobre {
 
- 
-
+    width: 40% !important;
+    height: 40% !important;
+  }
 }
 
 /*Banner técnico*/
@@ -380,25 +401,21 @@
 }
 
 .blocoTecnico img {
-      width: 20vh;
-    height: 20vh;
-    border-radius: 50%;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.35);
-    
-  
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.35);
 }
 
 .fundotecnico {
-
-    border-radius: 50%;
-    width: 35vh;
-    height: 13vh;
-    background: radial-gradient(circle, #ffffff 0%, #6DA8B8 100%);
-    display: flex
-;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  border-radius: 50%;
+  width: 35vh;
+  height: 13vh;
+  background: radial-gradient(circle, #ffffff 0%, #6da8b8 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .txtTecnico {
   font-size: 0.9rem;
@@ -421,7 +438,7 @@
 
 .sobre {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   margin: 10%;
   background-color: #fffcf6;
   border-radius: 1%;
@@ -433,8 +450,8 @@
 }
 
 .imgsobre {
-  width: 70%;
-  height: auto;
+  width: 90%;
+  height: 60%;
   padding: 5%;
 }
 
@@ -466,7 +483,7 @@
 .inspiracao {
   margin-top: 5%;
   width: 95%;
-  height: 100%
+  height: 100%;
 }
 
 .imgslider {
